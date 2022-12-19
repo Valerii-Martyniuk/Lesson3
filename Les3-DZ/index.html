@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      button {
+        margin-top: 10px;
+      }
+      .numberOfCupsC {
+        display: none;
+      }
+      .milk {
+        display: none;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="CoffeeMake" id="formId">
+      <p>ChooseCoffeMaker</p>
+      <select name="ChooseCoffeMaker" class="form">
+        <option value="Choose" selected disabled>Choose...</option>
+        <option value="Kapelna">Kapelna</option>
+        <option value="Rizcova">Rizcova</option>
+        <option value="AutoCoffe">AutoCoffe</option>
+      </select>
+      <div class="milk">
+        <p>If you wont add a milk</p>
+        <input type="checkbox" value="1" class="milk2" />Milk
+      </div>
+      <div class="numberOfCupsC">
+        <p>Choose number of cups</p>
+        <input type="radio" name="NumCheck" value="1" checked class="check" />
+        1
+        <input type="radio" name="NumCheck" value="2" class="check" />
+        2
+      </div>
+      <p>Choose type of coffe</p>
+      <select name="select1">
+        <option value="Cappuccino">Cappuccino</option>
+        <option value="Americano">Americano</option>
+        <option value="Latte">Latte</option>
+        <option value="Espresso">Espresso</option>
+      </select>
+      <p id="shNum">0</p>
+      <input type="button" value="+" class="add" />
+      <input type="button" value="-" class="takeOf" />
+    </form>
+    <button class="On">On</button>
+    <!-- <button class="Off">Off</button> -->
+    <script src="min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
